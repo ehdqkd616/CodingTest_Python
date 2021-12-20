@@ -22,3 +22,8 @@
 # 3. 값을 저장했다가 다시 사용하기 위해, 변수를 이용해 값을 저장하고, 변수를 이용해 계산을 한다.
 # 4. 원하는 결과 값을 필요한 형태로 만들어 출력한다.(공백, 줄바꿈, 구분자, 등에 따라 원하는 형태로 만들어 출력한다.)
  
+num1, num2, num3 = input().split()
+result1 = int(num1)+int(num2)
+result2 = float(num1)+float(num2)
+
+print(result1, f'{result2: .2f}')

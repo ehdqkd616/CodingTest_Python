@@ -16,3 +16,8 @@
 # 어떤 수를 다른 수로 나누고 난 후 남는 나머지를 계산하는 연산이다.
 
 # 실수로 나눈 나머지가 어떻게 계산될지도 생각해보자.
+
+int1, int2 = input().split()
+result = int(int1)%int(int2)
+
+print(result)

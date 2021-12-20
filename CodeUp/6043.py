@@ -18,3 +18,8 @@
 
 # 계산 결과값 중에서 믿을 수 있는 숫자의 개수를 의미하는, 유효숫자에 대해 찾아보자. 
 # 과학실험에서 온도나 부피를 측정할 때에도 유효숫자는 중요하다. 
+
+float1, float2 = input().split()
+result = float(float1)/float(float2)
+
+print(f'{result:.3f}')
