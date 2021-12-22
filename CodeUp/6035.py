@@ -13,6 +13,11 @@
 # 참고
 # 수 * 수는 곱(multiplication)이 계산된다.
 
+
+
 float1, float2 = input().split()
 result = float(float1)*float(float2)
 print(result)
+
+# impoart math
+# print(math.prod(map(float, input().split())))

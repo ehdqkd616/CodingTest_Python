@@ -16,3 +16,5 @@ float1 = float(input())
 float2 = float(input())
 result = float1+float2
 print(result)
+
+# print(sum(list(float(input())for _ in range(2))))
