@@ -24,5 +24,5 @@
 
 # 유니코드(unicode)는 세계 여러 나라의 문자를 공통된 코드 값으로 저장할 때 사용하는 표준 코드이다.
 
-s1, s2 = input().split(' ')
-print(s1, s2, sep='')
+int1 = ord(input())
+print(int1)
