@@ -15,5 +15,5 @@
 # 하지만, 저장된 값을 이용해 계산하거나 서로 붙여 연결시키거나 잘라내는 작업을 한다면?
 # 반드시 저장되어있는 값의 종류(문자/정수/실수/문자열 등)를 구분해 주어야 한다.
 
-variable1, variable2 = input().split()
-print(variable2, variable1)
+str = input()
+print((str+' ') * 3)

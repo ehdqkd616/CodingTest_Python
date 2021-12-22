@@ -15,5 +15,5 @@
 # print(?, ?, sep=':') 를 사용하면 콜론 ':' 기호를 사이에 두고 값을 출력한다.
 # sep 는 분류기호(seperator)를 의미한다.
 
-variable1, variable2 = input().split()
-print(variable2, variable1)
+variable1, variable2 = input().split(':')
+print(variable1, variable2, sep=':')

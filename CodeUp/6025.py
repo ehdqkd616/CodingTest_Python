@@ -18,7 +18,6 @@
 # 숫자로 구성된 문자열이나 실수를 정수(integer) 값으로 바꾸기 위해서는 int( ) 를 사용할 수 있다.
 # 수 + 수의 결과는 합(addition)이 계산된다.
 
-
 int1, int2 = input().split()
 result = int(int1)+int(int2)
 print(result)
