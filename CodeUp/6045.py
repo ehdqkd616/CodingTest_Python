@@ -1,6 +1,6 @@
 # 6045 : [기초-산술연산] 정수 3개 입력받아 합과 평균 출력하기(설명)(py)
 
-# 본 문제는 python 의 빠른 기초 학습을 위해 설계된 문제로서 python 코드 제출을 기준으로 설명되어 있습니다. 
+# 본 문제는 python 의 빠른 기초 학습을 위해 설계된 문제로서 python 코드 제출을 기준으로 설명되어 있습니다.
 # ------
 
 # 정수 3개를 입력받아 합과 평균을 출력해보자.
@@ -21,9 +21,9 @@
 # 2. 잘라낸 데이터들을 데이터형에 맞게 변환해 변수에 저장한다. (정수, 실수, 문자, 문자열 등에 따라 정확하게 변환한다.)
 # 3. 값을 저장했다가 다시 사용하기 위해, 변수를 이용해 값을 저장하고, 변수를 이용해 계산을 한다.
 # 4. 원하는 결과 값을 필요한 형태로 만들어 출력한다.(공백, 줄바꿈, 구분자, 등에 따라 원하는 형태로 만들어 출력한다.)
- 
-num1, num2, num3 = input().split()
-result1 = int(num1)+int(num2)
-result2 = float(num1)+float(num2)
 
-print(result1, f'{result2: .2f}')
+num1, num2, num3 = input().split()
+result1 = int(num1)+int(num2)+int(num3)
+result2 = (float(num1)+float(num2)+float(num3))/3
+
+print(result1, f'{result2:.2f}')
