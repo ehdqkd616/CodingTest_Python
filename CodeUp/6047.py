@@ -14,5 +14,5 @@
 # 참고
 # 예를 들어 1 3 이 입력되면 1을 23(8)배 하여 출력한다.
 
-
-print()
+int1, int2 = map(int, input().split())
+print(int1 << int2) 

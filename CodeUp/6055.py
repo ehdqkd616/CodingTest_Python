@@ -15,3 +15,6 @@
 # 불 값들 사이의 논리(not, and, or) 연산 결과도 마찬가지로 True 또는 False 의 불 값으로 계산된다.
 
 # ** 불 대수(boolean algebra)는 수학자 불이 만들어낸 것으로 True(참)/False(거짓) 값만 가지는 논리값과 그 값들 사이의 연산을 다룬다.
+
+bool1, bool2 = map(bool, map(int, input().split()))
+print(bool1 or bool2)

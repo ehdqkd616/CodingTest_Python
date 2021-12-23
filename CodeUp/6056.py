@@ -22,3 +22,6 @@
 # 수학 식에서는 소괄호 (), 중괄호 {}, 대괄호 []를 사용하기도 하지만, 프로그래밍언어에서는 소괄호 ( ) 만 사용한다.
 
 # ** 불 대수(boolean algebra)는 수학자 불이 만들어낸 것으로 True(참)/False(거짓) 값만 가지는 논리값과 그 값들 사이의 연산을 다룬다.
+
+bool1, bool2 = map(bool, map(int, input().split()))
+print(bool1 != bool2)

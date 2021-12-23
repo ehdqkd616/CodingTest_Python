@@ -29,3 +29,9 @@
 # 예시 코드에서
 # a>=b 의 결과가 True(참) 이면 (a if (a>=b) else b)의 결과는 a가 되고,
 # a>=b 의 결과가 False(거짓)이면 (a if (a>=b) else b)의 결과는 b가 된다.
+
+int1, int2 = map(int, input().split())
+max_int = (int1 if (int1 >= int2) else int2)
+# max_int = max(int1, int2)
+
+print(max_int)

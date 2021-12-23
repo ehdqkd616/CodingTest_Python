@@ -30,3 +30,6 @@
 # 빈 문자열 "" 나 ''는 False 이고, 나머지 문자열들은 True 로 평가된다.
 
 # ** 불 대수(boolean algebra)는 수학자 불이 만들어낸 것으로 True(참)/False(거짓) 값만 가지는 논리값과 그 값들 사이의 연산을 다룬다.
+
+bool1 = bool(int(input()))
+print(not bool1)
