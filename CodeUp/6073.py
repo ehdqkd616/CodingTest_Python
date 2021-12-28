@@ -13,3 +13,8 @@
 
 # 참고
 # 조건검사, 출력, 감소의 순서와 타이밍을 잘 생각해보자.
+
+int1 = int(input())
+while int1 > 0 :
+    print(int1-1)
+    int1 -= 1

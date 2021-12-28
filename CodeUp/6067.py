@@ -35,3 +35,15 @@
 # 와 같이 논리연산자(not, and, or)를 이용해 합쳐 표현할 수도 있다.
 # 비교연산(<, >, <=, >=, ==, !=) 의 계산 결과는 True 또는 False 의 불(boolean) 값이고,
 # 불 값들 사이의 논리연산(not, and, or)의 결과도 True 또는 False 의 불 값이다.
+
+int1 = int(input())
+if int1<0 :
+    if int1%2==0 :   
+        print('A') 
+    else :
+        print('B') 
+else :  
+    if int1%2==1 :   
+        print('D')
+    else :  
+        print("C")     

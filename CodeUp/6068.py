@@ -52,3 +52,13 @@
 #   ...
 # 도 똑같은 기능을 한다. elif는 else if 의 짧은 약어라고 생각해도 된다.
 # elif 를 사용하면 if ... else ... 구조를 겹쳐 사용할 때처럼, 여러 번 안 쪽으로 들여쓰기 하지 않아도 된다.
+
+score = int(input())
+if score >= 90 :     
+    print('A') 
+elif score >= 70 :  
+    print('B')
+elif score >= 40 :   
+    print('C')
+else :
+    print("D")     

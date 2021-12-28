@@ -12,3 +12,14 @@
 # C : run!
 # D : slowly~
 # 나머지 문자들 : what?
+
+score = input()
+def f(x):
+    return {
+        'A': 'best!!!',
+        'B': 'good!!',
+        'C': 'run!',
+        'D': 'slowly~'
+    }.get(x, 'what?')
+
+print(f(score))

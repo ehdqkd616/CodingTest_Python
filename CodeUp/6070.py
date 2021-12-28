@@ -19,3 +19,13 @@
 
 # 참고
 # 때때로 수들의 특징을 관찰하고 이용하면 매우 간단히 해결할 수도 있다.
+
+month = int(input())
+if month//3 == 1 :      # 몫이 1
+    print("spring") 
+elif month//3 == 2 :    # 몫이 2
+    print("summer")
+elif month//3 == 3 :    # 몫이 3
+    print("fall")
+else :
+    print("winter")     # 몫이 0 혹은 4
