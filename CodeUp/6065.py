@@ -37,11 +37,17 @@
 # if a%2==0 : #a가 짝수라면 ...
 # 와 같은 의미가 된다. 짝수가 아니라면 들여쓰기로 작성된 부분들은 실행되지 않는다.
 
-int1, int2, int3 = map(int, input().split())
+# int1, int2, int3 = map(int, input().split())
 
-if int1%2==0: 
-    print(int1) 
-if int2%2==0: 
-    print(int2) 
-if int3%2==0: 
-    print(int3) 
+# if int1%2==0: 
+#     print(int1) 
+# if int2%2==0: 
+#     print(int2) 
+# if int3%2==0: 
+#     print(int3) 
+
+# num = map(int, input().split())
+# print(type(num))
+# for n in num:
+    # if n % 2 == 0: print(n)
+    
