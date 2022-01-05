@@ -24,3 +24,6 @@ times = ord('a')
 while times <= char1 :
     print(chr(times), end=' ')
     times += 1
+    
+# for s in range(ord('a'), ord(input().rstrip()) + 1):
+#     print(chr(s), end=' ')
