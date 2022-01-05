@@ -10,3 +10,12 @@
 
 # **모니터, 스마트폰과 같은 디스플레이에서 각 픽셀의 색을 만들어내기 위해서 r, g, b 색을 조합할 수 있다.
 # **픽셀(pixel)은 그림(picture)을 구성하는 셀(cell)에서 이름이 만들어졌다.
+
+r, g, b = map(int, input().split())
+
+for i in range(0, r):
+    for j in range(0, g):
+        for k in range(0, b):
+            print(i, j, k)
+
+print(r*g*b)

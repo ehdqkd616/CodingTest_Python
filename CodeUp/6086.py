@@ -28,3 +28,12 @@
 # 참고
 # 조건문이나 반복문의 코드블록 안에서 break 가 실행되면,
 # 반복실행을 중단(break)하고, 가장 가까운 반복 블록의 밖으로 빠져나간다.
+
+int1 = int(input())
+sum = 0
+i = 1
+
+while (sum < int1):
+    sum += i
+    i += 1
+print(sum)

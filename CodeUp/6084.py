@@ -38,3 +38,8 @@
 # 1024 KB(210 KB)      = 1MB(메가 바이트)
 # 1024 MB(210 MB)     = 1GB(기가 바이트)
 # 1024 GB(210 GB)      = 1TB(테라 바이트)
+
+h, b, c, s = map(int, input().split())
+result = round(h*b*c*s/8/1024/1024, 1)
+
+print(result, "MB")
