@@ -24,3 +24,30 @@
 
 # 미로 상자의 테두리는 모두 벽으로 되어 있으며,
 # 개미집은 반드시 (2, 2)에 존재하기 때문에 개미는 (2, 2)에서 출발한다.
+
+arr_2d = [[0 for col in range(10)] for row in range(10)]
+for i in range(10):
+    arr_2d[i] = list(map(int, input().split()))
+
+x, y = 1, 1     # (2, 2) 좌표에서 시작
+arr_2d[x][y] = 9    # 이동한 좌표는 9로
+
+while True:
+    if(arr_2d[x][y] == 2):  # 먹이가 있으면 이동
+        arr_2d[x][y] = 9
+        break
+    if(arr_2d[x][y+1] != 1):    # y좌표 안막혀 있으면 y좌표 이동
+        arr_2d[x][y] = 9
+        y += 1
+    else:                       # y좌표 막혀있고
+        if(arr_2d[x+1][y] != 1):    # x좌표 안막혀 있으면 x좌표 이동
+            arr_2d[x][y] = 9
+            x += 1
+        else:
+          arr_2d[x][y] = 9
+          break
+      
+for i in arr_2d:
+    for j in i:
+        print(j, end=" ")
+    print()

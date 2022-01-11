@@ -52,6 +52,10 @@
 # n = int(input())
 # x, y = map(int, input().split())
 
+##############################
+# 2차원 배열을 먼저 생성하고, 입력받은 좌표의 요소 값을 1로 변환
+##############################
+
 n = int(input())
 arr_2d = [[0 for col in range(19)] for row in range(19)]
 

@@ -36,21 +36,23 @@
 # 가로번호, 세로번호를 사용해 2차원 형태의 데이터처럼 쉽게 기록하고 사용할 수 있다.
 # 리스트이름[번호][번호] 형식으로 저장되어있는 값을 읽고 쓸 수 있다.
 
+##############################
+# 2차원 배열을 먼저 생성하고, 
+# 입력받은 좌표의 요소 값을 확인하여 0은 1로, 1은 0으로 변환
+##############################
+
 arr_2d = [[0 for col in range(19)] for row in range(19)]
 
 for i in range(19):
     arr_2d[i] = list(map(int, input().split()))
 
-for i in range(19):
-    for j in range(19):
-        if(arr_2d[i][j] == 1):
-            arr_2d[i][j] = 0
-
 n = int(input())
 
 for i in range(n):
     x, y = map(int, input().split())
-    arr_2d[x-1][y-1] = 1 if arr_2d[x-1][y-1] == 0 else 0
+    for j in range(19):
+        arr_2d[j][y-1] = 1 if arr_2d[j][y-1] == 0 else 0
+        arr_2d[x-1][j] = 1 if arr_2d[x-1][j] == 0 else 0
 
 for i in arr_2d:
     for j in i:

@@ -16,3 +16,26 @@
 # 막대를 놓는 막대의 가장 왼쪽 또는 위쪽의 위치(x, y)가 주어질 때,
 
 # 격자판을 채운 막대의 모양을 출력하는 프로그램을 만들어보자.
+
+##############################
+# 2차원 배열을 먼저 생성하고, 
+# d에 따라 방향, l에 따라 길이를 지정하여 입력받은 좌표에 적용하여
+# 0 값을 1로 변환한다.
+##############################
+
+h, w = map(int, input().split())
+arr_2d = [[0 for col in range(w+1)] for row in range(h+1)]
+
+n = int(input())
+for i in range(n):
+    l, d, x, y = map(int, input().split())
+    for j in range(l):
+        if d == 0 :
+            arr_2d[x-1][y-1+j] = 1
+        else:
+            arr_2d[x-1+j][y-1] = 1
+
+for i in range(0, h) : 
+    for j in range(0, w) : 
+        print(arr_2d[i][j], end=' ') 
+    print()
