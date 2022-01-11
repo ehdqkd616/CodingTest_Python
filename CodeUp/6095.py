@@ -48,3 +48,18 @@
 # d = [[0 for j in range(20)] for i in range(20)]
 
 # 이러한 리스트 생성 방식을 List Comprehensions 라고 한다.
+
+# n = int(input())
+# x, y = map(int, input().split())
+
+n = int(input())
+arr_2d = [[0 for col in range(19)] for row in range(19)]
+
+for i in range(n):
+    x, y = map(int, input().split())
+    arr_2d[x-1][y-1] = 1
+
+for i in arr_2d:
+    for j in i:
+        print(j, end=" ")
+    print()

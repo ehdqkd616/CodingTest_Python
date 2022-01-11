@@ -36,3 +36,19 @@
 
 # 따라서, 모든 문제들에는 정답이 하나뿐만이 아니다.
 # 새로운, 더 빠른, 더 간단한 방법을 다양하게 생각해보고 여러가지 방법으로 도전해 볼 수 있다.
+
+##############################
+# 핵심 키워드 - 최소 공배수(Lowest Common denominator : LCM) #
+##############################
+
+human1_d, human2_d, human3_d = map(int, input().split())
+
+for lcm in range(max(human1_d, human2_d, human3_d), (human1_d*human2_d*human3_d)+1):
+    if(lcm % human1_d == 0 and lcm % human2_d == 0 and lcm % human3_d == 0):
+        print(lcm)
+        break
+
+# import math
+# human1_d, human2_d, human3_d = map(int, input().split())
+# lcm = math.lcm(human1_d, human2_d, human3_d)
+# print(lcm)
