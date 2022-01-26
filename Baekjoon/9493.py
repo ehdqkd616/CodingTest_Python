@@ -14,15 +14,15 @@
 # H:MM:SS
 # 분(MM)과 초(SS)는 모두 2자리로 표현되며 그렇기에 필요에 따라 0을 출력하는 경우도 존재한다. 초(Second)는 반올림하고, 시(Hour)는 최소 자리로 나타낸다. 출력에 공백은 없으며 테스트 케이스 사이에 빈 줄은 출력하지 않는다.
 
-# 거리 = 속도 * 시간
-# 시간 = 속도 / 거리
+### 거리 = 속도 * 시간
+### 시간 = 속도 / 거리
 
-while 1:    
+while 1:
     length_M, speed_A, speed_B = map(int, input().split())
-    
-    if length_M == speed_A == speed_B == 0 :
+
+    if length_M == speed_A == speed_B == 0:
         break
-    
+
     time = round(abs(length_M/speed_A - length_M/speed_B) * 3600)
     hour = time // 3600
     minute = (time % 3600) // 60

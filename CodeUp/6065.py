@@ -39,15 +39,14 @@
 
 # int1, int2, int3 = map(int, input().split())
 
-# if int1%2==0: 
-#     print(int1) 
-# if int2%2==0: 
-#     print(int2) 
-# if int3%2==0: 
-#     print(int3) 
+# if int1%2==0:
+#     print(int1)
+# if int2%2==0:
+#     print(int2)
+# if int3%2==0:
+#     print(int3)
 
 # num = map(int, input().split())
 # print(type(num))
 # for n in num:
-    # if n % 2 == 0: print(n)
-    
+# if n % 2 == 0: print(n)
