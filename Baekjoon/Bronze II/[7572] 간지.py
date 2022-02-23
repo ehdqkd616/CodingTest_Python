@@ -38,30 +38,44 @@
 ########################## 문제 풀이 ##########################
 # 1. 십간은 년도의 1의자리 숫자만 생각하면 된다.
 # 2. 십이지는 년도를 12로 나눈 나머지 숫지만 생각하면 된다.
-# 3. 십간의 첫 번째인 갑은 0이 아닌 4부터 시작하여 순회한다.
+# 3. 십간과 십이지는 모두 숫자 4부터 순차적으로 대입한다.
 ##############################################################
+
+# 1의 자리 숫자를 알아내기 위한 방법2
+#
+# 1. 입력 받은 연도에 log10을 하여 int로 변환한다.
+# ex) year = 2022일 때, int(math.log10(year)) 연산을 하면 3이 된다.
+#
+# 2. string은 리스트 인덱스로 문자를 검색할 수 있다.
+# ex) year = 2022일 때, str(year)[0]은 2, str(year)[1]는 0, str(year)[2]는 2, str(year)[3]는 2가 된다.
+#
+# 3. year = 2022일 때, int(math.log10(year))은 3이 되고,
+# str(year)[3]은 2022중 3번째 인덱스를 가리키기 때문에 1의자리 숫자가 2인 것을 알 수 있다.
+#
+# gan_str = gan_arr[int(str(year)[int(math.log10(year))])-4]
+
 
 # import math
 
-gan_arr = list(range(10))
-zi_arr = [i for i in "ABCDEFGHIJKL"]
-
-year = int(input())
-
-# gan_str = gan_arr[int(str(year)[int(math.log10(year))])-4]
-gan_str = gan_arr[(year % 10) - 4]
-zi_str = zi_arr[(year % 12 - 4)]
-
-print(zi_str, gan_str, sep='')
-
-
-# 60갑자 년도 조회
-# gan_arr = [i for i in "갑을병정무기경신임계"]
-# zi_arr = [i for i in "자축인묘진사오미신유술해"]
+# gan_arr = list(range(10))
+# zi_arr = [i for i in "ABCDEFGHIJKL"]
 
 # year = int(input())
 
+# # gan_str = gan_arr[int(str(year)[int(math.log10(year))])-4]
 # gan_str = gan_arr[(year % 10) - 4]
 # zi_str = zi_arr[(year % 12 - 4)]
 
-# print(gan_str, zi_str, sep='')
+# print(zi_str, gan_str, sep='')
+
+
+# 60갑자 년도 조회
+gan_arr = [i for i in "갑을병정무기경신임계"]
+zi_arr = [i for i in "자축인묘진사오미신유술해"]
+
+year = int(input())
+
+gan_str = gan_arr[(year % 10) - 4]
+zi_str = zi_arr[(year % 12 - 4)]
+
+print(gan_str, zi_str, sep='')
