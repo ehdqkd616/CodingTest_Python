@@ -18,44 +18,45 @@
 # 나머지 문자는 비밀번호의 일부이다. 물론, 나중에 백스페이스를 통해서 지울 수는 있다.
 # 만약 커서의 위치가 줄의 마지막이 아니라면, 커서 및 커서 오른쪽에 있는 모든 문자는 오른쪽으로 한 칸 이동한다.
 
-import sys
+N = int(input())
 
-input = sys.stdin.readline
+for i in range(N):
+    left = []
+    right = []
+    pwd = input()
 
-test_num = int(input())
-test_arr = []
-result_arr = []
+    for j in pwd:
+        if j == "-":
+            if left:
+                left.pop()
+        elif j == "<":
+            if left:
+                right.append(left.pop())
+        elif j == ">":
+            if right:
+                left.append(right.pop())
+        else:
+            left.append(j)
 
-for i in range(0, test_num):
+    left.extend(reversed(right))
+    print("".join(left))
 
-    result = []
-    index = 0
+# import sys
 
-    test_arr.append(input().rstrip())
+# input = sys.stdin.readline
 
-    for j in range(0, len(test_arr[i])):
-
-        if(test_arr[i][j] == '<'):
-            if(index > 0):
-                index = index-1
-            continue
-
-        if(test_arr[i][j] == '>'):
-            if(index < len(result)):
-                index = index+1
-            continue
-
-        if(test_arr[i][j] == '-'):
-            if(index > 0 and index < len(result)):
-                result.remove(index)
-                index = index-1
-            continue
-
-        result.append(test_arr[i][j])
-        index = index+1
-
-        if j == len(test_arr[i])-1:
-            result_arr.append(result)
-            result = []
-
-print(result_arr)
+# for _ in range(int(input())):
+#     sL, sR = [], []
+#     for i in input().strip():
+#         if i == '<':
+#             if sL:
+#                 sR.append(sL.pop())
+#         elif i == '>':
+#             if sR:
+#                 sL.append(sR.pop())
+#         elif i == '-':
+#             if sL:
+#                 sL.pop()
+#         else:
+#             sL.append(i)
+#     print(''.join(sL)+''.join(sR)[::-1])
